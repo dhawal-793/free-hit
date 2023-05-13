@@ -1,21 +1,21 @@
 <div id="header" align="center">
     <h1>🔥 Free-Hit </h1>
     <h3><strong><em>Your search ends here 🔍</em></strong></h3>
-  <img src="https://user-images.githubusercontent.com/97371915/230788547-134fdc3f-6e30-4c3d-affa-ade0a572e294.png" alt="home page of the website"><br>
+  <img src="https://github.com/JasonDsouza212/free-hit/assets/88102392/fe49d0ca-8e4f-4586-8aa0-d24420c7f2df" alt="home page of the website"><br>
     <!-- to change tagline if necessary -->
     </div> <br>
 
 # 🙌 Welcome to Free-Hit
 
 - As we all prefer open-source softwares for our daily use, it can be difficult to find tools that are specific to our needs. This is where **Free-Hit** comes in.
-- Free-Hit is a tool used to search for open-source projects that are both free and helpful for our needs
-- Although Free-Hit is a powerful tool to search for open-source projects, we recognize that it is still evolving. It will take time for us to add all the projects,resources and additional content that our users want.
+- Free-Hit is a tool used to search for Free tools that are helpful for our needs
+- Although Free-Hit is a powerful tool to search for Free tools, we recognize that it is still evolving. It will take time for us to add all the projects,resources and additional content that our users want.
 - That's why, we encourage contributions from everyone interested in making Free-Hit even more attractive and useful.
 
 # 🚀 About
 
 - If you're a developer or a tech enthusiast, you can help us create a better experience for everyone.
-- Free-Hit is more than just a tool to find open-source apps. It's also a treasure of useful content that can help you in many ways.
+- Free-Hit is more than just a tool to find Free tools. It's also a treasure of useful content that can help you in many ways.
 - For example, we have curated a list of remote hiring websites that can help you find your dream job from the comfort of your home.
 - But that's not all – we have big plans for the future. We are working hard to add more useful content that can make your life easier and more productive.
 - Stay tuned for updates!

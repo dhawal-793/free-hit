@@ -46,14 +46,14 @@
     "category": "tools",
     "image": "https://bit.ly/3xnfdRH",
     "link": "https://bitly.com/",
-    "description": "URL shortening and "
+    "description": " URL shortening and Generate QR Codes"
   },
   {
     "productName": "Contrib Rocks",
     "category": "tools",
     "image": "https://bit.ly/3Z1Fz7L",
     "link": "https://contrib.rocks/",
-    "description": "Contributors "
+    "description": "Generate an image of contributors to keep your README.md in sync"
   },
   {
     "productName": "Remote OK",
@@ -86,7 +86,7 @@
   {
     "productName": "We Work Remotely",
     "category": "remote",
-    "image": "https://bit.ly/3jSH49u",
+    "image": "https://t3.ftcdn.net/jpg/05/48/77/76/360_F_548777650_6prwFlpzBsIoDWoixdXuGTCb7gJHPKs0.jpg",
     "link": "https://weworkremotely.com/",
     "description": "Remote job board for a variety of industries and positions."
   },
@@ -408,7 +408,7 @@
   {
     "productName": "web designer Depot",
     "category": "web",
-    "image": "https://bit.ly/3KBrji4",
+    "image": "https://t3.ftcdn.net/jpg/04/06/91/94/360_F_406919447_kAcC5gdh1rpYlVxwMfHtUTGf24PUYSq8.jpg",
     "link": "https://www.webdesignerdepot.com/",
     "description": "Online resource for web design news, tips, and tutorials."
   },
@@ -829,7 +829,7 @@
     "productName": "Moviesmod",
     "category": "movies",
     "image": "https://bit.ly/3ZMrGen",
-    "link": "https://moviesmod.co/",
+    "link": "https://moviesmod.net.in/",
     "description": "Download HD quality movies and series"
   },
   {
@@ -881,7 +881,6 @@
     "link": "https://bit.ly/435pBfH",
     "description": "Enhance Leetcode experience with company tags like premium version"
   },
-
   {
     "productName": "Krisp Ai",
     "category": "ai",
@@ -889,7 +888,6 @@
     "link": "https://krisp.ai",
     "description": "Krisp improves the productivity of online meetings with its AI-powered Voice Clarity and Meeting Assistant."
   },
-
   {
     "productName": "Beatoven",
     "category": "ai",
@@ -897,7 +895,6 @@
     "link": "https://www.beatoven.ai",
     "description": "Create customisable royalty free music that elevates your story"
   },
-
   {
     "productName": "Scribe",
     "category": "ai",
@@ -905,7 +902,6 @@
     "link": "https://scribehow.com/",
     "description": "Automatically creates a how-to guide, complete with screenshots, instructions and clicks."
   },
-
   {
     "productName": "Ask Your PDF",
     "category": "ai",
@@ -913,7 +909,6 @@
     "link": "https://askyourpdf.com/",
     "description": "Discover a new level of PDF interaction with our gateway for dynamic and intelligent conversations."
   },
-
   {
     "productName": "Tome",
     "category": "ai",
@@ -921,12 +916,193 @@
     "link": "https://beta.tome.app/",
     "description": "Tome helps people tell great stories."
   },
-
   {
-    "productName": "CharGPT-sidebar",
+    "productName": "ChatGPT-sidebar",
     "category": "extensions",
     "image": "https://bit.ly/41aJCAb",
     "link": "https://chrome.google.com/webstore/detail/chatgpt-sidebar-support-g/difoiogjjojoaoomphldepapgpbgkhkb",
     "description": "Select any text,  explain it, translate it, summarize it or rewrite it, do anything with the ChatGPT Sidebar!"
-  }
+  },
+  {
+    "productName": "Super Normal",
+    "category": "ai",
+    "image": "https://bit.ly/43HiSJ7",
+    "link": "https://supernormal.com/",
+    "description": "Supernormal helps you create amazing meeting notes without lifting a finger"
+  },
+  {
+    "productName": "Magical",
+    "category": "ai",
+    "image": "https://bit.ly/43JO3na",
+    "link": "https://magical.so/",
+    "description": "Magical Manage meetings, scheduling, and notes directly from browser tabs"
+  },
+  {
+    "productName": "Removal",
+    "category": "ai",
+    "image": "https://bit.ly/3LdhLK2",
+    "link": "https://removal.ai/",
+    "description": "Remove Background From Image for Free Using Artificial Intelligence"
+  },
+  {
+    "productName": "Friday",
+    "category": "tools",
+    "image": "https://bit.ly/41J2PZC",
+    "link": "https://friday.app/",
+    "description": "Optimize your business with top-rated software tools"
+  },
+  {
+    "productName": "Ideasai",
+    "category": "ai",
+    "image": "https://bit.ly/41KHsqT",
+    "link": "https://ideasai.com/",
+    "description": "This platform helps you find the best ideas to start your startup"
+  },
+  {
+    "productName": "Merlin",
+    "category": "extensions",
+    "image": "https://bit.ly/3USMSOn",
+    "link": "https://bit.ly/3KTEuJP",
+    "description": "Merlin is a ChatGPT Assistant for All Websites"
+  },
+  {
+    "productName": "Emojipedia",
+    "category": "tools",
+    "image": "https://bit.ly/3UXQDBY",
+    "link": "https://emojipedia.org/",
+    "description": "A place of collections of Emoji"
+  },
+  {
+    "productName": "Redux DevTools",
+    "category": "extensions",
+    "image": "https://bit.ly/41NgP54",
+    "link": "https://bit.ly/3ncMNbU",
+    "description": "Redux DevTools for debugging application's state changes."
+  },
+  {
+    "productName": "MetaMask",
+    "category": "extensions",
+    "image": "https://bit.ly/423Iw9p",
+    "link": "https://bit.ly/421AAp4",
+    "description": "taMask is an extension for accessing Ethereum enabled distributed applications, or \"Dapps\" in your browser!"
+  },
+  {
+    "productName": "Chaijs",
+    "category": "tools",
+    "image": "shorturl.at/yzKQ2",
+    "link": "https://www.chaijs.com/",
+    "description": "Chai is a BDD / TDD assertion library for node"
+  },
+  {
+    "productName": "Mochajs",
+    "category": "tools",
+    "image": "https://bit.ly/42fBMFP",
+    "link": "https://mochajs.org/",
+    "description": "Mocha is a feature-rich JavaScript test framework"
+  },
+  {
+    "productName": "Chai matchers",
+    "category": "tools",
+    "image": "https://shorturl.at/dfBCH",
+    "link": "https://ethereum-waffle.readthedocs.io/en/latest/matchers.html",
+    "description": "A set of sweet chai matchers, makes your test easy to write and read. "
+  },
+  {
+    "productName": "OpenGraph",
+    "category": "tools",
+    "image": "https://ogp.me/logo.png",
+    "link": "https://www.opengraph.xyz/",
+    "description": "Free Meta Tag Generator and preview all Open Graph meta tags in one place"
+  },
+  {
+    "productName": "Testing Playground",
+    "category": "extensions",
+    "image": "https://rb.gy/yd6kd",
+    "link": "https://rb.gy/x7tcl",
+    "description": "Helps you find the best queries when testing a React application."
+  },
+  {
+    "productName": "unDraw",
+    "category": "tools",
+    "image": "https://bit.ly/3LqjzOT",
+    "link": "https://undraw.co/",
+    "description": "Create better designed websites, products and applications"
+  },
+  {
+    "productName": "Link Save",
+    "category": "extensions",
+    "image": "https://rb.gy/ubckl",
+    "link": "https://rb.gy/w7yaw",
+    "description": "Save the links of all open tabs to read later"
+  },
+  {
+    "productName": "Gamma AI",
+    "category": "ai",
+    "image": "https://ik.imagekit.io/aifinder/logos/gamma.webp",
+    "link": "https://gamma.app/",
+    "description": "A new medium for Presenting ideas which convert into presentation"
+  },
+  {
+    "productName": "Compose AI",
+    "category": "extensions",
+    "image": "https://rb.gy/fpi1n",
+    "link": "https://rb.gy/o9zip",
+    "description": "Accelerate your writing in the browser using AI"
+  },
+  {
+    "productName": "Screencastify",
+    "category": "extensions",
+    "image": "https://rb.gy/9qugc",
+    "link": "https://rb.gy/afqj9",
+    "description": "Chrome leading extension to capture, edit and share videos in seconds."
+  },
+  {
+    "productName": "FuturePedia",
+    "category": "tools",
+    "image": " https://bit.ly/42M17ar",
+    "link": "https://www.futurepedia.io/",
+    "description": "THE LARGEST AI TOOLS DIRECTORY, UPDATED DAILY"
+  },
+  {
+    "productName": "Remix Icon",
+    "category": "tools",
+    "image": "https://bit.ly/44V3RnV",
+    "link": "https://remixicon.com/",
+    "description": "Open-source neutral-style system icons."
+  },
+  {
+    "productName": "CSS Peeper",
+    "category": "extensions",
+    "image": "https://rb.gy/r2if4",
+    "link": "https://rb.gy/muo7f",
+    "description": "Extract CSS and build beautiful styleguides."
+  },
+  {
+    "productName": "I2Symbol",
+    "category": "tools",
+    "image": "https://bit.ly/3LIdEVo",
+    "link": "https://www.i2symbol.com/",
+    "description": "Website with loads of symbols, smileys, emojis, stickers to choose from."
+  },
+  {
+    "productName": "Clear Cache",
+    "category": "extensions",
+    "image": "https://rb.gy/gx2k6",
+    "link": "https://rb.gy/tlvey",
+    "description": "Clear your cache and browsing data with a single click of a button."
+  },
+  {
+    "productName": "AnimeSuge",
+    "category": "movies",
+    "image": "https://bit.ly/42GEqEq",
+    "link": "https://animesuge.to/",
+    "description": "A free source to watch all your favourite and latest anime."
+  },
+  {
+    "productName": "Postwise",
+    "category": "ai",
+    "image": "https://rb.gy/v5127",
+    "link": "https://postwise.ai/",
+    "description": "Craft engaging posts with AI, schedule effortlessly and watch your followers grow."
+  }  
 ]
