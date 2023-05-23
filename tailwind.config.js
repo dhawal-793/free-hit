@@ -11,6 +11,10 @@ module.exports = {
         'dark-primary': '#373530',
         'light-primary': '#F1F1EF',
         'dark-secondary': '#404040'
+      },
+      boxShadow: {
+        'card':'8px 8px 2px 0px #373530',
+        'card-hover':'6px 6px 0px 0px #373530'
       }
     },
     screens: {
