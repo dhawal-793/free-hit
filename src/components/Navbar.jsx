@@ -5,6 +5,7 @@ import { RiCloseLine, RiMenuFill, RiSearchLine } from 'react-icons/ri';
 
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import Sidebar from './Sidebar';
 
 
 const Navbar = () => {
@@ -56,6 +57,7 @@ const Navbar = () => {
                     </form>
                 </div>
             </nav>
+            <Sidebar navOpen={navOpen} />
         </>
     )
 }
