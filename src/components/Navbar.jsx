@@ -25,7 +25,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className='h-14 sm:h-[70px] px-2 sm:px-5 flex items-center justify-between border-b-2 border-dark-primary bg-light-primary sticky top-0 z-[999]'>
+            <nav name="Top" className='h-14 sm:h-[70px] px-2 sm:px-5 flex items-center justify-between border-b-2 border-dark-primary bg-light-primary sticky top-0 z-[999]'>
                 <div className='flex text-base xs:text-xl sm:text-2xl md:text-3xl font-bold uppercase space-x-1 sm:space-x-5'>
                     <div>
                         <button className="w-6 h-6 xs:h-8 xs:w-8 sm:h-11 sm:w-11 text-dark-primary bg-light-primary border-2 border-[#333] rounded-sm xs:rounded-md cursor-pointer flex items-center justify-center transition-all relative font-bold " onClick={handleNavClick}>
@@ -57,7 +57,7 @@ const Navbar = () => {
                     </form>
                 </div>
             </nav>
-            <Sidebar navOpen={navOpen} />
+            <Sidebar navOpen={navOpen} />    
         </>
     )
 }
