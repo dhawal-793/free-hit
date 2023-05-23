@@ -13,8 +13,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body >
                 <Navbar />
-                <div name="Top"></div>
-                {children}
+                 {children}
                 <BackToTopButton />
             </body>
         </html>
