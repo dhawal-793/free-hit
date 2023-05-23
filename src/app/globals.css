@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer base {
+    #sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+  
+    #sidebar::-webkit-scrollbar-thumb {
+      background-color: #999;
+      border-radius: 10px;
+    }
+  }
+  
+  @layer components {
+    .sidebarLinks {
+      @apply flex gap-2 items-center w-full hover:bg-light-primary hover:text-dark-primary font-semibold p-2 rounded-lg text-sm sm:text-lg;
+    }
+  }
+  
