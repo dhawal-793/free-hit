@@ -6,7 +6,7 @@ import ButtonLinks from "../data/categories"
 
 const Sidebar = ({ navOpen }) => {
   return (
-    <nav id="sidebar" className={`fixed left-0 top-14 sm:top-[70px] h-screen transition-all duration-300 delay-100 ease-in-out ${!navOpen ? "-translate-x-full" : "translate-x-0"} bg-dark-secondary overflow-auto text-light-primary uppercase`}>
+    <nav id="sidebar" className={`fixed left-0 top-14 sm:top-[70px] h-screen transition-all duration-300 delay-100 ease-in-out ${!navOpen ? "-translate-x-full" : "translate-x-0"} bg-dark-secondary overflow-auto text-light-primary uppercase z-50`}>
       <div className="w-full bg-dark-primary">
         <ul className="flex justify-between p-2 py-4">
           <li>
