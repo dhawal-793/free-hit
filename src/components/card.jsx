@@ -1,6 +1,5 @@
 
 const Card = ({ productData: { image, productName, description, link } }) => {
-
     return (
         <article className=" relative h-56 max-w-[350px] border border-dark-primary shadow-card bg-light-primary py-2.5 rounded-3xl hover:shadow-card-hover flex flex-col justify-between">
             <div className="px-4 mb-3">
