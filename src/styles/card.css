@@ -28,10 +28,12 @@
   background-color: var(--primary-white);
   padding: 10px 0px;
   border-radius: 20px;
+  transition: all 0.3s;
 }
 
 .grid > article:hover {
   box-shadow: 6px 6px 0px 0px var(--primary-black);
+  transform: scale(1.02);
 }
 
 img {
@@ -78,6 +80,7 @@ h3 .card-title {
   padding: 8px 25px;
   border-radius: 8px;
   margin: 2px;
+  transition: all 0.3s ease;
 }
 
 .btn-cont button a {
@@ -111,9 +114,22 @@ h3 .card-title {
   font-weight: bold;
   text-align: center;
   color: #1f1e1e;
-  padding-top: 5rem;
+  padding-top: 2rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
-  min-height: 55vh;
+  min-height: 12vh;
+}
+
+.not-found-img{
+  width:13rem;
+  height:15em;
+  
+}
+
+.not-found-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
 }
 /* card end */

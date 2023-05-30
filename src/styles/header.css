@@ -293,9 +293,11 @@ font-size: 20px;
 }
 
 .pages li a  {
+  margin: 3px;
     text-decoration: none;
     padding: 0px 20px;
     color: var(--primary-black); 
+    transition: all 0.3s ease-in-out ;
 }
 
 .pages li a:hover {
@@ -303,7 +305,14 @@ font-size: 20px;
   color: var(--primary-white);
   background-color: var(--primary-black);
   border-radius: 10px;
-  transition: all 0.1s ease-in;
+  
+}
+.pages li a.active {
+  padding: 3px 20px;
+  color: var(--primary-white);
+  background-color: var(--primary-black);
+  border-radius: 10px;
+  
 }
 /* nav pages end  */
 

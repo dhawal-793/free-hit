@@ -1,6 +1,7 @@
 import Header from './header'
 import React, { useContext } from 'react'
 import { ToolContext } from '../App'
+import noresultimg from '../images/sad-face-2.png'
 
 const Card = ({ length }) => {
   const {
@@ -16,9 +17,12 @@ const Card = ({ length }) => {
       <Header />
       <div className="card-container">
         {length == 0 ? (
+          <div className='not-found-wrapper'>
           <p className="no-results">
-            Sorry, no tools available for this search term
+          Sorry, our toolbox seems empty for this search term!
           </p>
+            <img class="not-found-img" src={noresultimg} alt=""/>
+            </div>
         ) : (
           <main className="grid">
             {filteredProducts.map((product, index) => {
@@ -42,12 +46,12 @@ const Card = ({ length }) => {
                         (obj) => obj['productName'] === product.productName
                       ) ? (
                         <button onClick={() => deleteres(product)}>
-                          <a href="#">
+                          <font color="white" size="3">
                             Delete<i className="ri-bookmark-fill"></i>
-                          </a>
+                          </font>
                         </button>
                       ) : (
-                        <a href="#">
+                        
                           <button
                             className="bookmark"
                             onClick={() => handelBookmarkAdd(product)}
@@ -56,7 +60,7 @@ const Card = ({ length }) => {
                               Bookmark
                             </font>
                           </button>
-                        </a>
+                        
                       )}
                     </div>
                   </div>
