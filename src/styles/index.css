@@ -1,21 +1,43 @@
 @import 'header.css';
-@import 'card.css';
-@import 'about.css';
-@import 'contribution.css';
-@import 'footer.css';
-@import 'backToTop.css';
-@import 'commonpage.css';
-@import 'community.css';
+@import 'Home.css';
+@import 'About.css';
+@import 'Team.css';
+@import 'Footer.css';
+@import 'BackToTop.css';
+@import 'NotFound.css';
+@import 'Community.css';
+
+:root {
+  --primary-white: #f1f1ef;
+  --primary-black: #373530;
+}
+
+:root {
+  --primary-white: #f1f1ef;
+  --primary-black: #373530;
+}
 
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
+  background-color: var(--primary-white);
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--primary-black);
-  border-radius: 7px;
+  background: var(--primary-black);
+  background: var(--primary-black);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  background-color: var(--primary-white);
 }
 
 /* ===============================1560 media query */
@@ -59,8 +81,8 @@
   }
 }
 
-/* ===============================1360 media query */
-@media screen and (max-width: 1360px) {
+/* ===============================1370 media query */
+@media screen and (max-width: 1370px) {
   .about {
     margin: 50px 100px;
     padding-left: 100px;
@@ -90,8 +112,8 @@
   }
 }
 
-/* ===============================1300 media query */
-@media screen and (max-width: 1300px) {
+/* ===============================1320 media query */
+@media screen and (max-width: 1320px) {
   .pages {
     display: none;
   }
@@ -108,11 +130,6 @@
 
 /* ===============================1070px media query */
 @media screen and (max-width: 1070px) {
-  .container {
-    position: absolute;
-    left: 690px;
-  }
-
   .search_wrap .search_box .input {
     width: 58%;
     font-size: 16px;
@@ -153,11 +170,6 @@
     top: -1px;
   }
 
-  .container {
-    position: absolute;
-    left: 590px;
-  }
-
   .about .ab2 img {
     position: relative;
     top: 10%;
@@ -166,11 +178,6 @@
 
 /* ===============================900px media query */
 @media screen and (max-width: 900px) {
-  .container {
-    top: 5px;
-    left: 500px;
-  }
-
   .team-content {
     grid-template-columns: repeat(2, minmax(130px, auto));
   }
@@ -184,17 +191,12 @@
 
 /* ===============================799 media query */
 @media screen and (max-width: 799px) {
-  .container {
-    position: absolute;
-    left: 450px;
-  }
-
   .Free-Hit {
     right: 240px;
   }
 
   .free-logo {
-    margin-left: 15px;
+    /* margin-left: 15px; */
     bottom: 10px;
   }
 
@@ -223,9 +225,8 @@
 
 /* ===============================750 media query */
 @media screen and (max-width: 750px) {
-  .container {
-    position: absolute;
-    left: 400px;
+  .search_box {
+    width: 200px;
   }
 
   .Free-Hit {
@@ -262,23 +263,18 @@
 
 /* ===============================700 media query */
 @media screen and (max-width: 700px) {
-  .Free-Hit .free-word {
-    display: none;
+  .Free-Hit a:first-child {
+    position: relative;
+    top: 12px;
   }
 
-  .container {
-    position: absolute;
-    left: 360px;
+  .free-word {
+    display: none;
   }
 }
 
 /* ===============================650 media query */
 @media screen and (max-width: 650px) {
-  .container {
-    position: absolute;
-    left: 330px;
-  }
-
   .about img {
     width: 350px;
     height: 350px;
@@ -298,6 +294,10 @@
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  }
+
+  .nav-container {
+    padding-top: 2px;
   }
 }
 
@@ -363,19 +363,13 @@
   }
 
   .team-content {
-    grid-template-columns: repeat(2, minmax(200px, 250px));
+    grid-template-columns: repeat(1, minmax(200px, 250px));
+    padding: 0 25%;
   }
 
   .about {
     position: relative;
     top: -80px;
-  }
-
-  .search_box {
-    width: 260px;
-    top: 7px;
-    right: 0px;
-    margin: 0px 0px;
   }
 
   .backToTopButton {
@@ -386,7 +380,7 @@
   }
 
   .transition-before {
-    transform: translateY(-110vh);
+    transform: translateY(20vh);
   }
 
   .Free-Hit {
@@ -396,17 +390,6 @@
 
 /* ===============================500 media query */
 @media screen and (max-width: 500px) {
-  .container {
-    left: 38%;
-  }
-
-  .search_box {
-    width: 280px;
-    top: 7px;
-    right: 0px;
-    margin: 0px 0px;
-  }
-
   .Free-Hit {
     right: 240px;
   }
@@ -414,13 +397,18 @@
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, auto));
   }
+
+  .about .ab1 img {
+    margin-left: 5%;
+  }
+
+  .about .ab2 img {
+    margin-left: 5%;
+  }
 }
 
 /* ===============================450 media query */
 @media screen and (max-width: 450px) {
-  .container {
-    left: 42%;
-  }
   .about {
     padding-left: 0px;
     padding-right: 0px;
@@ -464,16 +452,10 @@
     height: 400px;
   }
 
-  .search_box {
-    width: 240px;
-    top: 7px;
-    right: 0px;
-    margin: 0px 0px;
-  }
-
   .team-content {
     margin-left: 25px;
     grid-template-columns: repeat(1, minmax(300px, 320px));
+    padding: 0;
   }
 
   .team-content {
@@ -481,26 +463,16 @@
   }
 
   .center h1 {
-    font-size: 46px;
+    font-size: 1.5rem;
   }
 }
 
-/* ===============================420px media uiry */
+/* ===============================420px media query */
 @media screen and (max-width: 420px) {
-  .container {
-    left: 40%;
-  }
-
-  .search_box {
-    width: 240px;
-    top: 7px;
-    right: 0px;
-    margin: 0px 0px;
-  }
-
   .team-content {
-    margin-left: 25px;
+    margin-left: 40px;
     grid-template-columns: repeat(1, minmax(300px, 320px));
+    padding: 0;
   }
 
   .wrapper .menu-btn {
@@ -511,39 +483,44 @@
   }
 
   .Free-Hit {
-    right: 260px;
+    right: 200px;
   }
 
   .free-logo {
-    top: 10px;
+    position: relative;
+    left: -23px;
+    top: 5px;
     width: 40px;
     height: 40px;
   }
 
   .search_box {
-    width: 220px;
+    height: 52px;
+    top: 11px;
   }
 
   .backToTopButton {
     right: 2rem;
   }
+
+  .nav-container {
+    padding-top: 0;
+  }
+}
+
+/* ===============================395 media query */
+
+@media screen and (max-width: 395px) {
+  .team-content {
+    margin-left: 8%;
+    padding: 0;
+  }
 }
 
 /* ===============================380 media query */
 @media screen and (max-width: 380px) {
-  .container {
-    left: 35%;
-  }
-
   .Free-Hit {
     right: 70%;
-  }
-
-  .search_box {
-    width: 230px;
-    top: 7px;
-    right: 0px;
-    margin: 0px 0px;
   }
 
   .search_box .input {
@@ -590,7 +567,6 @@
 
   .about .ab1 img {
     margin-top: 50px;
-    margin-left: 5%;
     height: 330px;
     width: 330px;
   }
@@ -606,7 +582,7 @@
 
   .about .ab2 img {
     margin-top: 0px;
-    margin-left: 5%;
+    margin-left: 1%;
     order: 2;
   }
 
@@ -616,12 +592,13 @@
   }
 
   .team-content {
-    margin-left: 20px;
+    margin-left: 8%;
     grid-template-columns: repeat(1, minmax(280px, 300px));
+    padding: 0;
   }
 
   .center h1 {
-    font-size: 40px;
+    font-size: 1.3em;
   }
 
   .grid {
@@ -637,28 +614,29 @@
   }
 
   .transition-before {
-    transform: translateY(-110vh);
+    transform: translateY(20vh);
+  }
+}
+
+/* ===============================360 media query */
+@media screen and (max-width: 360px) {
+  .team-content {
+    margin-left: 10%;
+  }
+
+  .search_box {
+    width: 160px;
   }
 }
 
 /* ===============================350 media query */
 @media screen and (max-width: 350px) {
-  .container {
-    left: 35%;
-  }
   .navbar {
     width: 100vw;
   }
 
   .Free-Hit {
     right: 68%;
-  }
-
-  .search_box {
-    width: 205px;
-    top: 7px;
-    right: 0px;
-    margin: 0px 0px;
   }
 
   .grid {
@@ -678,5 +656,12 @@
 
   .transition-before {
     transform: translateY(-120vh);
+  }
+}
+
+/* ===============================310 media query */
+@media screen and (max-width: 310px) {
+  .search_box {
+    width: 150px;
   }
 }

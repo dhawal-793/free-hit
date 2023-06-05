@@ -1,11 +1,12 @@
-import banner1 from '../images/designer-desk-2 1.png'
-import banner2 from '../images/business-presentation-1 1.png'
-import Team from './team'
-import Header from './header'
+import banner1 from '../assets/designer-desk-2.png'
+import banner2 from '../assets/business-presentation-1.png'
+import Team from '../components/Team'
+import Header from '../components/Navbar'
+import "../styles/About.css"
 
 const About = () => {
   return (
-    <>
+    <div className="about_container">
       {/* <Aboutnav /> */}
       <Header />
       <section className="about">
@@ -45,7 +46,7 @@ const About = () => {
         </div>
       </section>
       <Team />
-    </>
+    </div>
   )
 }
 
