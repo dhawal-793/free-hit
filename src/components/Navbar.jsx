@@ -57,7 +57,7 @@ const Navbar = () => {
                     </form>
                 </div>
             </nav>
-            <Sidebar navOpen={navOpen} />    
+            <Sidebar navOpen={navOpen} />
         </>
     )
 }

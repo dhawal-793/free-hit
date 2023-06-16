@@ -1,5 +1,3 @@
-
-
 const Searchpage = () => {
   return (
     <div>Searchpage</div>

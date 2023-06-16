@@ -65,6 +65,3 @@ Follow the link to contribute to Free-Hit - [CONTRIBUTING.md](./CONTRIBUTING.md)
 <div align="center">
 <h3>Show some ❤️ by starring this awesome repository!</h3>
 </div>
-
-
-

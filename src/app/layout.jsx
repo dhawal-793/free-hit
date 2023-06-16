@@ -1,4 +1,3 @@
-
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import BackToTopButton from '@/components/BackToTop'
