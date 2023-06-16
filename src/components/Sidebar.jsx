@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { RiHome4Fill, RiBookmarkFill } from "react-icons/ri"
-import ButtonLinks from "../data/categories"
+import ButtonLinks from "@/data/categories"
 
 
 

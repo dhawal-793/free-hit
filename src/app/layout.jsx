@@ -1,7 +1,7 @@
 
 import './globals.css'
-import Navbar from '../components/Navbar'
-import BackToTopButton from '../components/BackToTop'
+import Navbar from '@/components/Navbar'
+import BackToTopButton from '@/components/BackToTop'
 
 export const metadata = {
     title: 'Create Next App',
