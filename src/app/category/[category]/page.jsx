@@ -1,6 +1,17 @@
-const CategoryPage = () => {
+import { notFound } from 'next/navigation.js'
+import CardContainer from '@/components/CardContainer.jsx'
+import categories from '@/data/constants.js'
+import products from "@/DB/product.json"
+
+const CategoryPage = ({ params: { category } }) => {
+
+    if (!categories.includes(category)) { return notFound() }
+
+    const data = products.filter(
+        (el) => el.category.toLowerCase().includes(category)
+    )
     return (
-        <div>Category</div>
+        <CardContainer productsData={data} />
     )
 }
 
