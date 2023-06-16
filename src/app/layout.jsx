@@ -10,9 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body >
+            <body className="bg-light-primary">
                 <Navbar />
-                 {children}
+                {children}
                 <BackToTopButton />
             </body>
         </html>
