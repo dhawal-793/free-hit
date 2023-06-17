@@ -1,7 +1,7 @@
 'use client'
 
 import { createContext, useContext, useEffect, useMemo, useReducer } from "react";
-import { reducer, actions, initialState, getBookMarks } from "./bookmarkRducer";
+import { reducer, actions, initialState, getBookMarks } from "./bookmarkReducer";
 
 
 
