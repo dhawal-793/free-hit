@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { RiCloseLine, RiMenuFill } from 'react-icons/ri';
 import Link from 'next/link';
-import Sidebar from '@/components/Sidebar';
+import Sidebar from '@/components/navigation/Sidebar';
 import SearchBox from '@/components/SearchBox';
 
 
