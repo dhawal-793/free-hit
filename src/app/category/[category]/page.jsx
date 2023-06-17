@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation.js'
-import CardContainer from '@/components/card/CardContainer.jsx'
+import ToolContainer from '@/components/card/ToolContainer.jsx'
 import categories from '@/data/constants.js'
 import products from "@/DB/product.json"
 
@@ -11,7 +11,7 @@ const CategoryPage = ({ params: { category } }) => {
         (el) => el.category.toLowerCase().includes(category)
     )
     return (
-        <CardContainer productsData={data} />
+        <ToolContainer productsData={data} />
     )
 }
 
