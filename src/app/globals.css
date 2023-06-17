@@ -11,8 +11,8 @@
     background-color: #999;
     border-radius: 10px;
   }
-  .grid-view{
-    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+  .grid-view {
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   }
 }
 
