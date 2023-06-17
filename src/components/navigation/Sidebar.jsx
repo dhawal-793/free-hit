@@ -69,10 +69,10 @@ export default Sidebar
 const CategoriesLink = ({ toggleCategories, categoriesOpen, setNavOpen }) => {
   return (
     <li onClick={toggleCategories} className={` relative px-2 pl-5 sm:pl-8 py-3 cursor-pointer w-full flex flex-col items-start  border-y border-b-[#535353] border-t-[#ffffff1a] transition-all duration-300 ${!categoriesOpen && "hover:shadow-[0_0_10px_3px_rgba(34,34,34,1)] hover:border-y-transparent hover:z-20"}`}>
-      <div className={`${categoriesOpen && "pb-4"} flex gap-3 items-center `}>
+      <div className={`${categoriesOpen && "pb-4"} flex gap-4 items-center `}>
         <div className={`relative w-6 h-6 flex items-center`}>
-          <RiMenuUnfoldLine className={` absolute transition-all duration-300 ease-out ${categoriesOpen && " rotate-180 opacity-0 "} `} />
-          <RiMenuFoldLine className={` absolute transition-all duration-300 ease-out ${!categoriesOpen && " -rotate-180 opacity-0 "} `} />
+        <RiMenuUnfoldLine className={`w-6 h-6 absolute transition-all duration-300 ease-out ${categoriesOpen && " rotate-180 opacity-0 "} `} />
+          <RiMenuFoldLine className={`w-6 h-6 absolute transition-all duration-300 ease-out ${!categoriesOpen && " -rotate-180 opacity-0 "} `} />
         </div>
         <div>
           Categories
