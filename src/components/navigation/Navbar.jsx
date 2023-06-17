@@ -5,11 +5,14 @@ import { RiCloseLine, RiMenuFill } from 'react-icons/ri';
 import Link from 'next/link';
 import Sidebar from '@/components/navigation/Sidebar';
 import SearchBox from '@/components/navigation/SearchBox';
+import { usePathname } from 'next/navigation';
 
 
 const Navbar = () => {
     const [navOpen, setNavOpen] = useState(false)
+    const url = usePathname()
 
+    const isActive = path => url.split('/').pop() === path
     return (
         <>
             <nav name="Top" className='h-14 sm:h-[70px] px-2 sm:px-5 flex items-center justify-between border-b-2 border-dark-primary bg-light-primary sticky top-0 z-[999]'>
@@ -29,16 +32,19 @@ const Navbar = () => {
                         </h1>
                     </div>
                 </div>
-                <div className='flex items-center'>
-                    <div className='items-center hidden mr-3 text-3xl lg:flex lg:space-x-4'>
-                        <Link href="/">
+                <div className='flex items-center gap-3'>
+                    <div className='items-center hidden mr-3 text-lg font-bold xl:flex lg:space-x-4'>
+                        <Link href="/" className={`hover:bg-dark-primary hover:text-light-primary rounded-lg px-3 py-1 ${isActive("") && "bg-dark-primary text-light-primary"}`}>
                             Home
                         </Link>
-                        <Link href="/about">
+                        <Link href="/bookmarks" className={`hover:bg-dark-primary hover:text-light-primary rounded-lg px-3 py-1 ${isActive("bookmarks") && "bg-dark-primary text-light-primary"}`}>
+                            Bookmarks
+                        </Link>
+                        <Link href="/about" className={`hover:bg-dark-primary hover:text-light-primary rounded-lg px-3 py-1 ${isActive("about") && "bg-dark-primary text-light-primary"}`}>
                             About
                         </Link>
-                        <Link href="/bookmarks">
-                            Bookmarks
+                        <Link href="/community" className={`hover:bg-dark-primary hover:text-light-primary rounded-lg px-3 py-1 ${isActive("community") && "bg-dark-primary text-light-primary"}`}>
+                            Community
                         </Link>
                     </div>
                     <SearchBox />
