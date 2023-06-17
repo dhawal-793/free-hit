@@ -1,42 +1,60 @@
-import { RiHome4Fill, RiBookmarkFill } from "react-icons/ri"
-import ButtonLinks from "@/data/categories"
-import { useRouter } from "next/navigation"
+'use client'
+
+import { RiHome4Fill, RiBookmarkFill, RiMenuUnfoldLine, RiMenuFoldLine, RiInformationLine } from "react-icons/ri"
+import { IoIosPeople } from "react-icons/io"
+import { useState } from "react";
+
+import Categories from "@/components/navigation/Categories";
+import SidebarLink from "@/components/navigation/SidebarLink";
+
+
+const sideBarLinks = [
+  {
+    name: "home",
+    href: "/",
+    Icon: RiHome4Fill
+  },
+  {
+    name: "categories",
+  },
+  {
+    name: "bookmarks",
+    href: "/bookmarks",
+    Icon: RiBookmarkFill
+  },
+  {
+    name: "about",
+    href: "/about",
+    Icon: RiInformationLine
+  },
+  {
+    name: "community",
+    href: "/community",
+    Icon: IoIosPeople
+  }
+]
+
+
+
+
+
+
 
 const Sidebar = ({ navOpen = null, setNavOpen = null }) => {
-  const router = useRouter();
 
-  const handleLink = ({ category, href }) => {
-    if (category)
-      router.push(category === "all" ? '/' : `/category/${category}`)
+  const [categoriesOpen, setCategoriesOpen] = useState(false)
+  const toggleCategories = () => setCategoriesOpen(prev => !prev)
 
-    if (href)
-      router.push(href)
-
-    setNavOpen(prev => !prev)
-  }
   return (
-    <nav id="sidebar" className={`fixed left-0 top-14 sm:top-[70px] h-screen transition-all duration-300 delay-100 ease-in-out ${!navOpen ? "-translate-x-full" : "translate-x-0"} bg-dark-secondary overflow-auto text-light-primary uppercase z-50`}>
-      <div className="w-full bg-dark-primary">
-        <ul className="flex justify-between p-2 py-4">
-          <li>
-            <button onClick={() => handleLink({ href: "/" })} className="sidebarLinks"><RiHome4Fill className="text-lg md:text-2xl" />Home</button>
-          </li>
-          <li>
-            <button onClick={() => handleLink({ href: "/bookmarks" })} className="sidebarLinks"><RiBookmarkFill className="text-lg md:text-2xl" />Bookmarks</button>
-          </li>
-        </ul>
-      </div>
+    <nav id="sidebar" className={`fixed left-0 pb-60 top-14 sm:top-[70px] h-[screen] transition-all duration-300 delay-100 ease-in-out ${!navOpen ? "-translate-x-full" : "translate-x-0"} bg-dark-secondary text-light-primary uppercase overflow-auto z-[100]`}>
       <ul className="flex flex-col w-full text-sm sm:text-lg md:text-xl">
-        {ButtonLinks.map((buttonLink) => {
-          const Icon = buttonLink.icon[0]
+        {sideBarLinks.map(({ name, href, Icon }) => {
           return (
-            <buton onClick={() => handleLink({ category: buttonLink.category })}
-              className={`pr-3 py-3 pl-5 cursor-pointer sm:pl-10 w-full flex items-center gap-4 border-y border-b-[#535353] border-t-[#ffffff1a] ${buttonLink.id !== 1 && "border-t-0"} transition-all duration-300 hover:shadow-[0_0_10px_3px_rgba(34,34,34,1)] hover:border-y-transparent hover:z-10`}
-              key={buttonLink.id}
-            >
-              <Icon className="w-5 h-5" />
-              <span className="">{buttonLink.name}</span>
-            </buton>
+            name === "categories" ?
+              <CategoriesLink categoriesOpen={categoriesOpen} setNavOpen={setNavOpen} toggleCategories={toggleCategories} />
+              :
+              <SidebarLink href={href} key={name} name={name} Icon={Icon} setNavOpen={setNavOpen} />
+
           )
         })}
       </ul>
@@ -45,3 +63,22 @@ const Sidebar = ({ navOpen = null, setNavOpen = null }) => {
 }
 
 export default Sidebar
+
+
+
+const CategoriesLink = ({ toggleCategories, categoriesOpen, setNavOpen }) => {
+  return (
+    <li onClick={toggleCategories} className={` relative px-2 pl-5 sm:pl-8 py-3 cursor-pointer w-full flex flex-col items-start  border-y border-b-[#535353] border-t-[#ffffff1a] transition-all duration-300 ${!categoriesOpen && "hover:shadow-[0_0_10px_3px_rgba(34,34,34,1)] hover:border-y-transparent hover:z-20"}`}>
+      <div className={`${categoriesOpen && "pb-4"} flex gap-3 items-center `}>
+        <div className={`relative w-6 h-6 flex items-center`}>
+          <RiMenuUnfoldLine className={` absolute transition-all duration-300 ease-out ${categoriesOpen && " rotate-180 opacity-0 "} `} />
+          <RiMenuFoldLine className={` absolute transition-all duration-300 ease-out ${!categoriesOpen && " -rotate-180 opacity-0 "} `} />
+        </div>
+        <div>
+          Categories
+        </div>
+      </div>
+      <Categories setNavOpen={setNavOpen} categoriesOpen={categoriesOpen} />
+    </li>
+  )
+}
