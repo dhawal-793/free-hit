@@ -1,4 +1,4 @@
-import CardContainer from "@/components/CardContainer";
+import CardContainer from "@/components/card/CardContainer";
 import productsData from "@/DB/product.json"
 
 export default function Home() {

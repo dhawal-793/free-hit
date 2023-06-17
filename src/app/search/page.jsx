@@ -1,4 +1,4 @@
-import CardContainer from "@/components/CardContainer"
+import CardContainer from "@/components/card/CardContainer"
 import products from "@/DB/product.json"
 import { notFound } from "next/navigation"
 
