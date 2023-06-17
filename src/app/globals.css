@@ -14,10 +14,17 @@
   .grid-view {
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   }
+
+  .page-height {
+    min-height: calc(100vh - 54.4px);
+  }
+  .md-page-height {
+    min-height: calc(100vh - 68.4px);
+  }
 }
 
 @layer components {
   .sidebarLinks {
-    @apply flex gap-2 items-center w-full hover:bg-light-primary hover:text-dark-primary font-semibold p-2 rounded-lg text-sm sm:text-lg cursor-pointer;
+    @apply flex items-center w-full gap-2 p-2 text-sm font-semibold rounded-lg cursor-pointer hover:bg-light-primary hover:text-dark-primary sm:text-lg;
   }
 }
