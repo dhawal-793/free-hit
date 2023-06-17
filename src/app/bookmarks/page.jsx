@@ -1,6 +1,6 @@
 'use client'
 
-import CardContainer from "@/components/CardContainer"
+import CardContainer from "@/components/card/CardContainer"
 import { useEffect, useState } from "react"
 import { useBookmarkContext } from "@/context/bookmarkContext"
 

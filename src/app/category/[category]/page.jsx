@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation.js'
-import CardContainer from '@/components/CardContainer.jsx'
+import CardContainer from '@/components/card/CardContainer.jsx'
 import categories from '@/data/constants.js'
 import products from "@/DB/product.json"
 
