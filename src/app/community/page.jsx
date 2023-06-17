@@ -1,8 +1,6 @@
-import React from 'react'
-
 const Community = () => {
     return (
-        <div>Community</div>
+        <div className='text-center'>Community</div>
     )
 }
 
