@@ -1,6 +1,6 @@
 import './globals.css'
 import Navbar from '@/components/navigation/Navbar'
-import BackToTopButton from '@/components/BackToTop'
+import BackToTopButton from '@/components/buttons/BackToTop'
 import { BookmarkContextProvider } from '@/context/bookmarkContext'
 
 export const metadata = {
