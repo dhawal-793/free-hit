@@ -3,7 +3,7 @@ import Card from "@/components/card/Card"
 
 const CardContainer = ({ productsData }) => {
   return (
-    <div className="p-5 w-full grid grid-view justify-center items-start gap-4 mt-4 min-h-[55vh] text-center">
+    <div className="grid items-center justify-center w-full gap-4 p-5 mt-4 grid-view page-height md:md-page-height">
       {productsData.map((productData, index) => {
         return <Card key={index} productData={productData} />
       })}
