@@ -46,7 +46,7 @@ const Sidebar = ({ navOpen = null, setNavOpen = null }) => {
   const toggleCategories = () => setCategoriesOpen(prev => !prev)
 
   return (
-    <nav id="sidebar" className={`fixed left-0 pb-60 top-14 sm:top-[70px] h-[screen] transition-all duration-300 delay-100 ease-in-out ${!navOpen ? "-translate-x-full" : "translate-x-0"} bg-dark-secondary text-light-primary uppercase overflow-auto z-[100]`}>
+    <nav id="sidebar" className={`fixed left-0 pb-10 top-14 sm:top-[70px] h-screen min-h-screen transition-all duration-300 delay-100 ease-in-out ${!navOpen ? "-translate-x-full" : "translate-x-0"} bg-dark-secondary text-light-primary uppercase overflow-scroll z-[100]`}>
       <ul className="flex flex-col w-full text-sm sm:text-lg md:text-xl">
         {sideBarLinks.map(({ name, href, Icon }) => {
           return (
