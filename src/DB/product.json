@@ -1,5 +1,12 @@
 [
   {
+    "productName": "JSONView",
+    "category": "extension",
+    "image": "https://shorturl.at/uvFQ9",
+    "link": "https://chrome.google.com/webstore/detail/jsonview/gmegofmjomhknnokphhckolhcffdaihd",
+    "description": "This JSONView converts the JSON content into an understandable format and esay to view."
+  },
+  {
     "productName": "Netlify",
     "category": "tools",
     "image": "https://bit.ly/3qCeSLa",
@@ -684,6 +691,13 @@
     "image": "https://bit.ly/3ktuJZG",
     "link": "https://www.flaticon.com/",
     "description": "Collection of free vector icons for web design and graphic design."
+  },
+  {
+    "productName": "Fireship",
+    "category": "web",
+    "image": "https://avatars.githubusercontent.com/u/46283609?s=280&v=4",
+    "link": "https://fireship.io/lessons/tailwind-tutorial/",
+    "description": "Fireship provides blazingly fast && highly-amusing tricks for TailwindCss."
   },
   {
     "productName": "Friv",
